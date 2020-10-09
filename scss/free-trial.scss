@@ -1,0 +1,72 @@
+.free-trial {
+    background-color: #f5fcfd;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        max-width: 114rem;
+        margin: 0 auto;
+
+        .free-trial__promo {
+            margin-right: 16.2rem;
+
+            h2 {
+                font-weight: 500;
+                font-size: 3.2rem;
+                line-height: 3.6rem;
+            }
+
+            span {
+                display: block;
+                margin-top: 2rem;
+
+                font-size: 1.6rem;
+                color: $grey;
+                line-height: 2.7rem;
+            }
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            width: 26.3rem;
+            height: 7.6rem;
+            padding-top: 2.5rem;
+
+            text-decoration: none;
+            font-weight: 700;
+            line-height: 2.7rem;
+            font-size: 1.6rem;
+            text-align: center;
+            color: #ffffff;
+
+            background-color: $blue;
+            border-radius: 0.5rem;
+
+            transition: all .2s linear;
+
+            &:hover {
+                transform: translateY(-.5rem);
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 1.6rem;
+                height: 1.2rem;
+
+                top: 3.3rem;
+                left: 18.4rem;
+
+                background-image: url(../icons/arrow.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+    }
+}
