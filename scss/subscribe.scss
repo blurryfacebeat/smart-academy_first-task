@@ -1,0 +1,79 @@
+.subscribe {
+    background-color: $blue;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+
+    &__wrapper {
+        width: 95%;
+        max-width: 114rem;
+        margin: 0 auto;
+
+        .subscribe__title {
+            text-align: center;
+            color: #ffffff;
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 2.4rem;
+        }
+
+        .subscribe__form-wrapper {
+            margin-top: 3.3rem;
+
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                input {
+                    height: 6rem;
+                    width: 39.2rem;
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+
+                    color: #ffffff;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.7rem;
+                    font-family: inherit;
+
+                    border: 2px solid #ffffff;
+                    border-right: 0;
+                    border-radius: 30px 0 0 30px;
+                    outline: 0;
+                    background-color: $blue;
+                    transition: border-color .2s linear;
+
+                    &::placeholder {
+                        font-family: 'Quicksand', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.6rem;
+                        line-height: 2.7rem;
+                        color: #fff;
+                    }
+
+                    &:focus {
+                        border-color: rgba(255, 255, 255, .6);
+                    }
+                }
+
+                button {
+                    width: 16.5rem;
+                    height: 6rem;
+
+                    font-family: inherit;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: $blue;
+                    line-height: 2.7rem;
+
+                    border: 0;
+                    border-radius: 0 30px 30px 0;
+                    outline: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -20,18 +20,28 @@
             background-color: #ffffff;
             border-radius: 0.5rem;
             box-shadow: 0 0 25px #f0f0f0;
-            transition: all .2s linear;
+            transition: transform .2s linear;
 
-            &:last-child {
-                margin-right: 0;
+            &:first-child {
+                &:hover {
+                    transform: rotate(-5deg);
+                }
             }
 
             &:nth-child(2) {
                 transform: translateY(5.9rem);
+
+                &:hover {
+                    transform: translateY(6.3rem);
+                }
             }
 
-            &:hover {
-                transform: translateY(-1rem);
+            &:last-child {
+                margin-right: 0;
+
+                &:hover {
+                    transform: rotate(5deg);
+                }
             }
 
             .item-icon {

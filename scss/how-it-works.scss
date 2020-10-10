@@ -1,0 +1,93 @@
+.how-it-works {
+    padding-top: 15.1rem;
+    padding-bottom: 12.7rem;
+
+    background-color: #f5fcfd;
+
+    &__wrapper {
+        width: 95%;
+        max-height: 114rem;
+        margin: 0 auto;
+
+        .how-it-works__title {
+            margin-bottom: 3.9rem;
+
+            text-align: center;
+            font-size: 3.2rem;
+            font-weight: 500;
+            line-height: 3.6rem;
+        }
+
+        .how-it-works__text {
+            width: 74rem;
+            margin: 0 auto;
+            margin-bottom: 4.7rem;
+
+            text-align: center;
+            line-height: 2.7rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            color: $grey;
+        }
+
+        .how-it-works__items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url(../img/how_it_work_bg.svg);
+            background-repeat: no-repeat;
+            background-position: center 5rem;
+
+            .how-it-works__item {
+                margin-right: 8.9rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .how-it-works__item__icon {
+                    width: 10rem;
+                    height: 10rem;
+                    margin: 0 auto;
+                    margin-bottom: 3.1rem;
+
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+
+                    &_create-acc {
+                        background-image: url(../icons/create_acc.svg);
+                    }
+
+                    &_confirm-email {
+                        background-image: url(../icons/confirm_email.svg);
+                    }
+
+                    &_see-results {
+                        background-image: url(../icons/see_results.svg);
+                    }
+                }
+
+                .how-it-works__item__title {
+                    margin-bottom: 2.9rem;
+
+                    text-align: center;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    line-height: 2.7rem;
+                }
+
+                .how-it-works__item__text {
+                    width: 30rem;
+                    margin: 0 auto;
+                    
+                    text-align: center;
+                    font-size: 1.6rem;
+                    line-height: 2.7rem;
+                    color: $grey;
+                }
+            }
+        }
+    }
+}
