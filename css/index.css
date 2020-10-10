@@ -5,7 +5,11 @@
   margin: 0;
   padding: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 html, body {
+  color: #333333;
   font-family: 'Quicksand', sans-serif;
   font-size: 62.5%;
   background-color: #fff; }
@@ -212,8 +216,8 @@ html, body {
       text-align: center;
       background-color: #ffffff;
       border-radius: 0.5rem;
-      -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
-              box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
+      -webkit-box-shadow: 0 0 25px #f0f0f0;
+              box-shadow: 0 0 25px #f0f0f0;
       -webkit-transition: all .2s linear;
       -o-transition: all .2s linear;
       transition: all .2s linear; }
@@ -252,6 +256,310 @@ html, body {
         font-size: 1.6rem;
         line-height: 2.7rem;
         font-weight: 400; }
+
+.pricing-plan {
+  padding-top: 13rem;
+  padding-bottom: 13rem; }
+  .pricing-plan__wrapper {
+    width: 95%;
+    max-width: 114rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .pricing-plan__wrapper .pricing-plan__title {
+      margin-right: 6rem; }
+      .pricing-plan__wrapper .pricing-plan__title h2 {
+        font-size: 3.2rem;
+        font-weight: 500;
+        line-height: 3.6rem; }
+      .pricing-plan__wrapper .pricing-plan__title p {
+        margin-top: 3.3rem;
+        width: 33rem;
+        color: #929292;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.7rem; }
+      .pricing-plan__wrapper .pricing-plan__title .pricing-plan__switch-wrapper {
+        margin-top: 3.7rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .pricing-plan__wrapper .pricing-plan__title .pricing-plan__switch-wrapper .pricing-plan__switch__btn {
+          width: 16.5rem;
+          height: 5rem;
+          text-align: center;
+          color: #0f7bff;
+          font-size: 1.6rem;
+          font-weight: 700;
+          line-height: 2.7rem;
+          border: 2px solid #0f7bff;
+          background-color: transparent;
+          cursor: pointer;
+          outline: 0; }
+          .pricing-plan__wrapper .pricing-plan__title .pricing-plan__switch-wrapper .pricing-plan__switch__btn_monthly {
+            border-radius: 2.5rem 0 0 2.5rem; }
+          .pricing-plan__wrapper .pricing-plan__title .pricing-plan__switch-wrapper .pricing-plan__switch__btn_yearly {
+            border-radius: 0 2.5rem 2.5rem 0; }
+          .pricing-plan__wrapper .pricing-plan__title .pricing-plan__switch-wrapper .pricing-plan__switch__btn_active {
+            color: #ffffff;
+            background-color: #0f7bff;
+            border: 0; }
+    .pricing-plan__wrapper .pricing-plan__items {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item {
+        width: 36rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-right: 3rem;
+        padding-bottom: 4rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
+                box-shadow: 0 0 68px rgba(165, 165, 165, 0.25); }
+        .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item:nth-child(2n) {
+          margin-right: 0; }
+        .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-icon {
+          width: 10rem;
+          height: 10rem;
+          margin: 0 auto;
+          margin-top: 4rem;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain; }
+          .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-icon_standard {
+            background-image: url(../icons/telegram.svg); }
+          .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-icon_premium {
+            background-image: url(../icons/rocket.svg); }
+        .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-header {
+          margin-top: 2.9rem;
+          font-weight: 500;
+          font-size: 1.8rem;
+          line-height: 2.7rem; }
+        .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .decoration-line {
+          width: 16.5rem;
+          height: 0.1rem;
+          margin: 0 auto;
+          margin-top: 3rem;
+          background-color: #e0e0e0; }
+        .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-features {
+          margin-top: 2.9rem;
+          list-style: none; }
+          .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-features li {
+            margin-bottom: 2.1rem;
+            font-weight: 400;
+            color: #929292;
+            font-size: 1.6rem;
+            line-height: 2.7rem; }
+            .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-features li:last-child {
+              margin-bottom: 0; }
+        .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-price {
+          margin-top: 2.7rem; }
+          .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-price span {
+            color: #0f7bff;
+            font-weight: 500; }
+          .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-price .item-currency {
+            font-size: 1.6rem; }
+          .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-price .item-value {
+            font-size: 3.2rem; }
+        .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-try {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin-top: 3.8rem;
+          width: 16.5rem;
+          height: 5rem;
+          color: #fff;
+          line-height: 2.7rem;
+          font-weight: 700;
+          font-size: 1.6rem;
+          text-decoration: none;
+          background-color: #0f7bff;
+          border-radius: 2.5rem;
+          -webkit-transition: -webkit-transform .2s linear;
+          transition: -webkit-transform .2s linear;
+          -o-transition: transform .2s linear;
+          transition: transform .2s linear;
+          transition: transform .2s linear, -webkit-transform .2s linear; }
+          .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-try_premium {
+            border: 2px solid #0f7bff;
+            background-color: transparent;
+            color: #0f7bff; }
+          .pricing-plan__wrapper .pricing-plan__items .pricing-plan__item .item-try:hover {
+            -webkit-transform: scale(1.02);
+                -ms-transform: scale(1.02);
+                    transform: scale(1.02); }
+
+.news {
+  padding-top: 15.2rem;
+  padding-bottom: 12.7rem; }
+  .news__wrapper {
+    width: 95%;
+    max-width: 114rem;
+    margin: 0 auto; }
+    .news__wrapper .news__title {
+      text-align: center;
+      font-size: 3.2rem;
+      font-weight: 500;
+      line-height: 3.6rem; }
+    .news__wrapper .news__text {
+      width: 74rem;
+      margin: 0 auto;
+      margin-top: 3.9rem;
+      text-align: center;
+      color: #929292;
+      line-height: 2.7rem;
+      font-weight: 400;
+      font-size: 1.6rem; }
+    .news__wrapper .news__items {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 4.7rem; }
+      .news__wrapper .news__items_other {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .news__wrapper .news__items .news__item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 4rem; }
+        .news__wrapper .news__items .news__item:last-child {
+          margin-bottom: 0; }
+        .news__wrapper .news__items .news__item img {
+          margin-right: 3rem;
+          width: 16.5rem;
+          height: 12rem; }
+        .news__wrapper .news__items .news__item .news__item__content .news__item__title {
+          width: 38rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 2.8rem; }
+        .news__wrapper .news__items .news__item .news__item__content .news__item__text {
+          width: 30rem;
+          margin-top: 2.5rem;
+          color: #929292;
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 2.7rem; }
+        .news__wrapper .news__items .news__item .news__item__content .news__item__continue {
+          display: none;
+          margin-top: 3.7rem;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          color: #0f7bff;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 2.7rem;
+          -webkit-transition: text-shadow .2s linear;
+          -o-transition: text-shadow .2s linear;
+          transition: text-shadow .2s linear; }
+          .news__wrapper .news__items .news__item .news__item__content .news__item__continue::after {
+            content: "";
+            width: 1.5rem;
+            height: 1.1rem;
+            margin-left: 0.9rem;
+            background-image: url(../icons/blue-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            -webkit-transition: -webkit-filter .2s linear;
+            transition: -webkit-filter .2s linear;
+            -o-transition: filter .2s linear;
+            transition: filter .2s linear;
+            transition: filter .2s linear, -webkit-filter .2s linear; }
+          .news__wrapper .news__items .news__item .news__item__content .news__item__continue:hover {
+            text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.3); }
+          .news__wrapper .news__items .news__item .news__item__content .news__item__continue:hover::after {
+            -webkit-filter: drop-shadow(0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.3));
+                    filter: drop-shadow(0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.3)); }
+        .news__wrapper .news__items .news__item_main {
+          display: block;
+          margin-right: 3rem;
+          margin-bottom: 0; }
+          .news__wrapper .news__items .news__item_main img {
+            margin-right: 0;
+            width: 55.5rem;
+            height: 28.5rem; }
+          .news__wrapper .news__items .news__item_main .news__item__content .news__item__title {
+            width: 49rem;
+            margin-top: 4rem;
+            color: #0f7bff;
+            font-size: 2.4rem;
+            line-height: 3.6rem; }
+          .news__wrapper .news__items .news__item_main .news__item__content .news__item__text {
+            margin-top: 2.4rem;
+            width: 53rem;
+            color: #929292;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.7rem; }
+          .news__wrapper .news__items .news__item_main .news__item__content .news__item__continue {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex; }
 
 .free-trial {
   background-color: #f5fcfd;

@@ -1,0 +1,198 @@
+.pricing-plan {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+
+    &__wrapper {
+        width: 95%;
+        max-width: 114rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .pricing-plan__title {
+            margin-right: 6rem;
+
+            h2 {
+                font-size: 3.2rem;
+                font-weight: 500;
+                line-height: 3.6rem;
+            }
+
+            p {
+                margin-top: 3.3rem;
+                width: 33rem;
+
+                color: $grey;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2.7rem;
+            }
+
+            .pricing-plan__switch-wrapper {
+                margin-top: 3.7rem;
+                display: flex;
+                align-items: center;
+
+                .pricing-plan__switch__btn {
+                    width: 16.5rem;
+                    height: 5rem;
+
+                    text-align: center;
+                    color: $blue;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 2.7rem;
+
+                    border: 2px solid $blue;
+                    background-color: transparent;
+                    cursor: pointer;
+                    outline: 0;
+
+                    &_monthly {
+                        border-radius: 2.5rem 0 0 2.5rem;
+                    }
+
+                    &_yearly {
+                        border-radius: 0 2.5rem 2.5rem 0;
+                    }
+
+                    &_active {
+                        color: #ffffff;
+
+                        background-color: $blue;
+                        border: 0;
+                    }
+                }
+            }
+        }
+
+        .pricing-plan__items {
+            display: flex;
+            justify-content: center;
+
+            .pricing-plan__item {
+                width: 36rem;
+                // height: 57.6rem;
+                display: flex;
+                flex-direction: column;
+                margin-right: 3rem;
+                padding-bottom: 4rem;
+
+                text-align: center;
+
+                border-radius: 0.5rem;
+                background-color: #ffffff;
+                box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
+
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+
+                .item-icon {
+                    width: 10rem;
+                    height: 10rem;
+                    margin: 0 auto;
+                    margin-top: 4rem;
+
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+
+                    &_standard {
+                        background-image: url(../icons/telegram.svg);
+                    }
+
+                    &_premium {
+                        background-image: url(../icons/rocket.svg);
+                    }
+                }
+
+                .item-header {
+                    margin-top: 2.9rem;
+
+                    font-weight: 500;
+                    font-size: 1.8rem;
+                    line-height: 2.7rem;
+                }
+                
+                .decoration-line {
+                    width: 16.5rem;
+                    height: 0.1rem;
+                    margin: 0 auto;
+                    margin-top: 3rem;
+
+                    background-color: #e0e0e0;
+                }
+
+                .item-features {
+                    margin-top: 2.9rem;
+                    
+                    list-style: none;
+
+                    li {
+                        margin-bottom: 2.1rem;
+
+                        font-weight: 400;
+                        color: $grey;
+                        font-size: 1.6rem;
+                        line-height: 2.7rem;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                .item-price {
+                    margin-top: 2.7rem;
+
+                    span {
+                        color: $blue;
+                        font-weight: 500;
+                    }
+
+                    .item-currency {
+                        font-size: 1.6rem;
+                    }
+
+                    .item-value {
+                        font-size: 3.2rem;
+                    }
+                }
+
+                .item-try {
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+                    align-items: center;
+                    margin-top: 3.8rem;
+                    width: 16.5rem;
+                    height: 5rem;
+                    
+                    color: #fff;
+                    line-height: 2.7rem;
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    text-decoration: none;
+
+                    background-color: $blue;
+                    border-radius: 2.5rem;
+
+                    transition: transform .2s linear;
+
+                    &_premium {
+                        border: 2px solid $blue;
+                        background-color: transparent;
+
+                        color: $blue;
+                    }
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+        }
+    }
+}

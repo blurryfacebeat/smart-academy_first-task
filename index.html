@@ -14,8 +14,8 @@
                 <nav>
                     <ul class="site__nav">
                         <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing-plan">Pricing</a></li>
                         <li><a href="#">Pages</a></li>
                     </ul>
                     <ul class="user__nav">
@@ -35,7 +35,7 @@
     </header>
 
     <main class="main">
-        <section class="features">
+        <section id="features" class="features">
             <div class="features__wrapper">
                 <div class="features__item">
                     <div class="item-icon item-icon_analysis"></div>
@@ -57,6 +57,98 @@
                     <p class="item-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing-plan" class="pricing-plan">
+            <div class="pricing-plan__wrapper">
+                <div class="pricing-plan__title">
+                    <h2>Pricing Plan</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+                    <div class="pricing-plan__switch-wrapper">
+                        <button class="pricing-plan__switch__btn pricing-plan__switch__btn_monthly pricing-plan__switch__btn_active">Monthly</button>
+                        <button class="pricing-plan__switch__btn pricing-plan__switch__btn_yearly">Yearly</button>
+                    </div>
+                </div>
+                <div class="pricing-plan__items">
+                    <div class="pricing-plan__item">
+                        <div class="item-icon item-icon_standard"></div>
+                        <h3 class="item-header">Standard</h3>
+                        <div class="decoration-line"></div>
+                        <ul class="item-features">
+                            <li>2gb Hosting</li>
+                            <li>10 Custom Domain</li>
+                            <li>SSD Hosting</li>
+                            <li>50gb Bandwith</li>
+                            <li>Free Support</li>
+                        </ul>
+                        <div class="item-price">
+                            <span class="item-currency">$</span>
+                            <span class="item-value">19.00</span>
+                        </div>
+                        <a href="#" class="item-try item-try_standard">Try Now</a>
+                    </div>
+                    <div class="pricing-plan__item">
+                        <div class="item-icon item-icon_premium"></div>
+                        <h3 class="item-header">Premium</h3>
+                        <div class="decoration-line"></div>
+                        <ul class="item-features">
+                            <li>2gb Hosting</li>
+                            <li>10 Custom Domain</li>
+                            <li>SSD Hosting</li>
+                            <li>50gb Bandwith</li>
+                            <li>Free Support</li>
+                        </ul>
+                        <div class="item-price">
+                            <span class="item-currency">$</span>
+                            <span class="item-value">49.00</span>
+                        </div>
+                        <a href="#" class="item-try item-try_premium">Try Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="news__wrapper">
+                <h2 class="news__title">Latest News From Us</h2>
+                <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+                <div class="news__items">
+                    <div class="news__item news__item_main">
+                        <img src="./img/news/1.png" alt="news-hacker">
+                        <div class="news__item__content">
+                            <h2 class="news__item__title">The master bedroom suite is phenomenally spacious</h2>
+                            <p class="news__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                            <a href="#" class="news__item__continue">Continue Reading</a>
+                        </div>
+                    </div>
+                    <div class="news__items_other">
+                        <div class="news__item">
+                            <img src="./img/news/2.png" alt="news-hacker">
+                            <div class="news__item__content">
+                                <h2 class="news__item__title">The master bedroom suite is phenomenally spacious</h2>
+                                <p class="news__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                <a href="#" class="news__item__continue">Continue Reading</a>
+                            </div>
+                        </div>
+                        <div class="news__item">
+                            <img src="./img/news/3.png" alt="news-hacker">
+                            <div class="news__item__content">
+                                <h2 class="news__item__title">The master bedroom suite is phenomenally spacious</h2>
+                                <p class="news__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                <a href="#" class="news__item__continue">Continue Reading</a>
+                            </div>
+                        </div>
+                        <div class="news__item">
+                            <img src="./img/news/4.png" alt="news-hacker">
+                            <div class="news__item__content">
+                                <h2 class="news__item__title">The master bedroom suite is phenomenally spacious</h2>
+                                <p class="news__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                <a href="#" class="news__item__continue">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
