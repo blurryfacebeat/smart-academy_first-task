@@ -29,7 +29,7 @@ gulp.task('js', () => {
         .pipe(babel({
             presets: ['@babel/preset-env']
         }))
-        .pipe(gulp.dest('js/main'))
+        .pipe(gulp.dest('./'))
         .pipe(brSync.reload({ stream: true }));
 });
 
