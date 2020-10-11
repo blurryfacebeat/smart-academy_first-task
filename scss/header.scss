@@ -290,6 +290,34 @@
                 .header__logo {
                     margin-bottom: 5rem;
                 }
+
+                nav {
+                    .site__nav {
+                        margin-right: 4.2rem;
+                    }
+                    .user__nav {
+                        li {
+                            a {
+                                width: max-content;
+                                height: max-content;
+                                color: $grey;
+                                background-color: transparent;
+
+                                
+                                transition: color .2s linear;
+
+                                &:hover {
+                                    transform: scale(1);
+                                    color: $blue;
+                                }
+    
+                                &:active {
+                                    transform: scale(1);
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -314,6 +342,41 @@
 
         .header__go-to-advantages {
             display: none;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__wrapper {
+            .nav__wrapper {
+                nav {
+                    display: flex;
+                    flex-direction: column;
+
+                    .site__nav {
+                        margin-right: 0;
+                        flex-direction: column;
+
+                        li {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__call-to-action {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+
+            h1 {
+                font-size: 2.6rem;
+            }
+
+            p {
+                width: auto;
+            }
         }
     }
 }

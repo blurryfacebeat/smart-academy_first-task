@@ -79,3 +79,110 @@
         }
     }
 }
+
+@media(max-width: 1440px) {
+    .advantages {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        &__wrapper {
+            display: flex;
+            max-width: 114rem;
+
+            .advantages__items {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .advantages__item {
+                    display: block;
+
+                    img {
+                        display: none;
+                    }
+
+                    .advantages__item__content {
+                        p {
+                            width: 45rem;
+                        }
+                    }
+
+                    &_easy-messaging {
+                        .advantages__item__img {
+                            margin-right: 0;
+                        }
+                    }
+
+                    &_keep-in-touch {
+                        .advantages__item__content {
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1022px) {
+    .advantages {
+        &__wrapper {
+            max-width: 100rem;
+
+            .advantages__items {
+                flex-direction: column;
+
+                .advantages__item {
+                    margin-bottom: 3rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .advantages__item__content {
+                        p {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .advantages {
+        &__wrapper {
+            width: auto;
+            max-width: auto;
+
+            .advantages__items {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                
+                .advantages__item {
+                    .advantages__item__content {
+                        h3 {
+                            text-align: center;
+                        }
+
+                        p {
+                            width: auto;
+
+                            text-align: center;
+                        }
+
+                        a {
+                            display: block;
+                            margin: 0 auto;
+
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
