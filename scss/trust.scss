@@ -1,0 +1,106 @@
+.trust {
+    min-height: 60.8rem;
+    padding-top: 13rem;
+
+    background-color: #f5fcfd;
+    background-image: url(../img/trust_bg.png);
+    background-repeat: no-repeat;
+    background-size: 75.2rem 60.8rem;
+    background-position: left center;
+
+    &__wrapper {
+        overflow: hidden;
+        width: 95%;
+        margin: 0 auto;
+
+        .trust__title {
+            margin-bottom: 4.4rem;
+            margin-left: 50%;
+
+            font-size: 3.2rem;
+            line-height: 3.6rem;
+            font-weight: 500;
+        }
+
+        .trust__slider {
+            margin-left: 50%;
+            width: 100%;
+            overflow: hidden;
+
+            .trust__items {
+                margin-bottom: 5rem;
+                display: flex;
+                // transform: translateX(-43rem);
+
+                transition: transform .2s linear;
+    
+                .trust__item {
+                    width: 38.2rem;
+                    padding: 3rem 4rem;
+                    margin-right: 3rem;
+        
+                    background-color: #ffffff;
+                    border-radius: 0.5rem;
+                    box-shadow: 0 0 25px rgba(165, 165, 165, 0.1);
+                    background-image: url(../icons/twitter_colored_icon.svg);
+                    background-repeat: no-repeat;
+                    background-size: 1.7rem 1.3rem;
+                    background-position: 32.5rem 4rem;
+        
+                    &__name {
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 1.5rem;
+        
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        line-height: 2.7rem;
+                    }
+        
+                    &__position {
+                        display: block;
+                        margin-bottom: 2.9rem;
+        
+                        color: $grey;
+                        font-size: 1.4rem;
+                        line-height: 2.7rem;
+                        font-weight: 400;
+                    }
+        
+                    &__text {
+                        color: $grey;
+                        font-size: 1.6rem;
+                        line-height: 2.7rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+    
+            .trust__slider__switcher {
+                display: flex;
+    
+                .slider__switcher__item {
+                    margin-right: 1rem;
+                    width: 2rem;
+                    height: 1rem;
+    
+                    border-radius: 0.5rem;
+                    background-color: #d4d4d4;
+                    cursor: pointer;
+
+                    transition: all .2s linear;
+    
+                    &:last-child {
+                        margin-right: 0;
+                    }
+    
+                    &_active {
+                        width: 3rem;
+    
+                        background-color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
