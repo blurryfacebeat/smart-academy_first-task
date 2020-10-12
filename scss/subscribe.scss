@@ -126,9 +126,15 @@
 
                     input {
                         margin-bottom: 1.5rem;
+
+                        text-align: center;
                         
                         border-radius: 3rem;
                         border-right: 0.2rem solid #ffffff;
+
+                        &::placeholder {
+                            text-align: center;
+                        }
                     }
 
                     button {
