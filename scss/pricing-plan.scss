@@ -73,11 +73,11 @@
 
             .pricing-plan__item {
                 width: 36rem;
-                // height: 57.6rem;
                 display: flex;
                 flex-direction: column;
                 margin-right: 3rem;
                 padding-bottom: 4rem;
+                padding-top: 4rem;
 
                 text-align: center;
 
@@ -93,7 +93,6 @@
                     width: 10rem;
                     height: 10rem;
                     margin: 0 auto;
-                    margin-top: 4rem;
 
                     background-repeat: no-repeat;
                     background-position: center;
@@ -194,6 +193,99 @@
 
                     &:active {
                         transform: scale(0.95);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1022px) {
+    .pricing-plan {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        &__wrapper {
+            max-width: 100rem;
+            flex-direction: column;
+
+            .pricing-plan__title {
+                margin-right: 0;
+
+                text-align: center;
+
+                p {
+                    margin-top: 2rem;
+                }
+
+                .pricing-plan__switch-wrapper {
+                    margin-top: 2rem;
+                    margin-bottom: 4rem;
+                }
+            }
+
+            .pricing-plan__items {
+                .pricing-plan__item {
+                    width: 33rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-plan {
+        &__wrapper {
+            max-width: 74rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pricing-plan {
+        &__wrapper {
+            width: auto;
+            max-width: auto;
+
+            .pricing-plan__title {
+
+                p {
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    width: auto;
+                }
+
+                .pricing-plan__switch-wrapper {
+                    display: flex;
+                    justify-content: center;
+
+                    .pricing-plan__switch__btn {
+                        width: 15rem;
+                    }
+                }
+            }
+
+            .pricing-plan__items {
+                align-items: center;
+                flex-direction: column;
+
+                .pricing-plan__item {
+                    margin-right: 0;
+                    margin-bottom: 2rem;
+                    width: 30rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .item-icon {
+                        display: none;
+                    }
+
+                    .item-header {
+                        margin-top: 0;
+
+                        text-transform: uppercase;
                     }
                 }
             }

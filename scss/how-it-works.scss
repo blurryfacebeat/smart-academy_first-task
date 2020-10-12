@@ -122,6 +122,14 @@
     }
 }
 
+@media (max-width: 768px) {
+    .how-it-works {
+        &__wrapper {
+            max-width: 74rem;
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .how-it-works {
         &__wrapper {
