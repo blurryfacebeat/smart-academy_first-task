@@ -30,7 +30,6 @@
             .trust__items {
                 margin-bottom: 5rem;
                 display: flex;
-                // transform: translateX(-43rem);
 
                 transition: transform .2s linear;
     
@@ -98,6 +97,89 @@
                         width: 3rem;
     
                         background-color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .trust {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        min-height: 0;
+
+        background-image: none;
+
+        &__wrapper {
+            .trust__title {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .trust__slider {
+                margin: 0 auto;
+
+                .trust__items {
+                    margin-bottom: 0;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .trust__slider__switcher {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1022px) {
+    .trust {
+        &__wrapper {
+            max-width: 100rem;
+
+            .trust__slider {
+                .trust__items {
+                    flex-direction: column;
+
+                    .trust__item {
+                        margin-right: 0;
+                        margin-bottom: 2rem;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .trust {
+        &__wrapper {
+            max-width: 74rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .trust {
+        &__wrapper {
+            max-width: auto;
+            width: auto;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+
+            .trust__slider {
+                .trust__items {
+                    .trust__item {
+                        width: auto;
+
+                        background-position: 23rem 3.7rem;
                     }
                 }
             }
