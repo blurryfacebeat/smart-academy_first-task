@@ -118,7 +118,7 @@
     .subscribe {
         &__wrapper {
             width: auto;
-            max-width: auto;
+            max-width: none;
 
             .subscribe__form-wrapper {
                 form {

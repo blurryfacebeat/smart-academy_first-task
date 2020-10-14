@@ -292,6 +292,10 @@ html, body {
           -ms-transform: translateX(-50%) scale(0.95);
               transform: translateX(-50%) scale(0.95); }
 
+@media (min-width: 1986px) {
+  .header {
+    background-image: url(../img/Device.png), none; } }
+
 @media (max-width: 1690px) {
   .header {
     background-image: url(../img/Device.png), none; } }
@@ -484,7 +488,7 @@ html, body {
 @media (max-width: 767px) {
   .features__wrapper {
     width: auto;
-    max-width: auto;
+    max-width: none;
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
     .features__wrapper .features__item {
@@ -628,7 +632,7 @@ html, body {
 @media (max-width: 767px) {
   .advantages__wrapper {
     width: auto;
-    max-width: auto; }
+    max-width: none; }
     .advantages__wrapper .advantages__items {
       padding-left: 1.5rem;
       padding-right: 1.5rem; }
@@ -743,7 +747,7 @@ html, body {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     width: auto;
-    max-width: auto; }
+    max-width: none; }
     .how-it-works__wrapper .how-it-works__text {
       width: auto; } }
 
@@ -954,7 +958,7 @@ html, body {
 @media (max-width: 767px) {
   .pricing-plan__wrapper {
     width: auto;
-    max-width: auto; }
+    max-width: none; }
     .pricing-plan__wrapper .pricing-plan__title p {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
@@ -1083,6 +1087,30 @@ html, body {
             width: 3rem;
             background-color: #0f7bff; }
 
+@media (min-width: 2500px) {
+  .trust {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    min-height: 0;
+    background-image: none; }
+    .trust__wrapper .trust__title {
+      margin-left: 0;
+      text-align: center; }
+    .trust__wrapper .trust__slider {
+      margin: 0 auto; }
+      .trust__wrapper .trust__slider .trust__items {
+        margin-bottom: 0;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .trust__wrapper .trust__slider .trust__slider__switcher {
+        display: none; } }
+
 @media (max-width: 1500px) {
   .trust {
     padding-top: 5rem;
@@ -1128,7 +1156,7 @@ html, body {
 
 @media (max-width: 767px) {
   .trust__wrapper {
-    max-width: auto;
+    max-width: none;
     width: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
@@ -1311,7 +1339,7 @@ html, body {
 @media (max-width: 767px) {
   .news__wrapper {
     width: auto;
-    max-width: auto;
+    max-width: none;
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
     .news__wrapper .news__items .news__item {
@@ -1488,7 +1516,7 @@ html, body {
 @media (max-width: 767px) {
   .free-trial__wrapper {
     width: auto;
-    max-width: auto; } }
+    max-width: none; } }
 
 .subscribe {
   background-color: #0f7bff;
@@ -1605,7 +1633,7 @@ html, body {
 @media (max-width: 767px) {
   .subscribe__wrapper {
     width: auto;
-    max-width: auto; }
+    max-width: none; }
     .subscribe__wrapper .subscribe__form-wrapper form {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1783,7 +1811,7 @@ html, body {
 @media (max-width: 767px) {
   .footer__wrapper {
     text-align: center;
-    max-width: auto;
+    max-width: none;
     width: auto; }
     .footer__wrapper .footer__links__item {
       margin-right: 1rem; } }

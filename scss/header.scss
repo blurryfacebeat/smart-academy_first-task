@@ -270,6 +270,14 @@
     }
 }
 
+@media (min-width: 1986px) {
+    .header {
+        background-image: 
+            url(../img/Device.png),
+            none;
+    }
+}
+
 @media (max-width: 1690px) {
     .header {
         background-image: 
